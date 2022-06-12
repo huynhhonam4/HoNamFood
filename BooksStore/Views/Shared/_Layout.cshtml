@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BooksStore</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+</head>
+<body style="background-image: url(https://i.postimg.cc/zXf73r2S/3189150.jpg);
+            background-size: cover;">
+    <div>
+        <div class="bg-dark text-white p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col navbar-brand"
+                        style="color: #86ba09;
+                        font-family:sans-serif;
+                        font-weight:bolder;
+                        font-size: 30px;
+                        padding-left: 30px;
+                        text-shadow: 1px 1px 2px black, 0 0 25px #86ba09, 0 0 5px darkgreen;">HONAM FOOD</div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-1 p-1">
+            <div id="genres" class="col-3">
+                <p>
+                    Chào mừng đến với HoNam FOOD, sản phẩm đạt chuẩn chất lượng quốc tế.
+                    100% tự nhiên giá cả phải chăng.
+                </p>
+                <vc:genre-navigation />
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
